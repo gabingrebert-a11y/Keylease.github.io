@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: express-backend
+    # environment:
+    #   - NODE_ENV=development
+    #   - SECRET=${SECRET}          pour plus tard
+    #   - MYSQL_HOST=db
+    #   - MYSQL_PORT=3306
+    #   - MYSQL_DATABASE=${MYSQL_DATABASE}
+    #   - MYSQL_USER=${MYSQL_USER}
+    #   - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/usr/src/app
+      - ./DataBase:/var/www/html/DataBase
+    depends_on:
+      - db
+    command: npm run dev
+
+  db:
+    image: mysql:8.0
+    restart: always
+    env_file:
+      - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./e-todo.sql:/docker-entrypoint-initdb.d/e-todo.sql
+
+volumes:
+  db_data:
