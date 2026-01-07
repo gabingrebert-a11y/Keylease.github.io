@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.197181e2.css",
-    "main.js": "/static/js/main.ea72e760.js",
-    "static/js/488.381a6c69.chunk.js": "/static/js/488.381a6c69.chunk.js",
-    "static/media/Logo.png": "/static/media/Logo.a6d6743de72d2d5623b8.png",
-    "index.html": "/index.html",
-    "main.197181e2.css.map": "/static/css/main.197181e2.css.map",
-    "main.ea72e760.js.map": "/static/js/main.ea72e760.js.map",
-    "488.381a6c69.chunk.js.map": "/static/js/488.381a6c69.chunk.js.map"
+    "main.css": "/key-lease.github.io/static/css/main.197181e2.css",
+    "main.js": "/key-lease.github.io/static/js/main.7a60805b.js",
+    "static/js/488.381a6c69.chunk.js": "/key-lease.github.io/static/js/488.381a6c69.chunk.js",
+    "static/media/Logo.png": "/key-lease.github.io/static/media/Logo.a6d6743de72d2d5623b8.png",
+    "index.html": "/key-lease.github.io/index.html",
+    "main.197181e2.css.map": "/key-lease.github.io/static/css/main.197181e2.css.map",
+    "main.7a60805b.js.map": "/key-lease.github.io/static/js/main.7a60805b.js.map",
+    "488.381a6c69.chunk.js.map": "/key-lease.github.io/static/js/488.381a6c69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.197181e2.css",
-    "static/js/main.ea72e760.js"
+    "static/js/main.7a60805b.js"
   ]
 }
